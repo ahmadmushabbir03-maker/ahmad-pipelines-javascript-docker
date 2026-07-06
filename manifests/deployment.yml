@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: ahmadmushabbirmakerahmadpipelinesjavascriptdocker 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ahmadmushabbirmakerahmadpipelinesjavascriptdocker
+  template:
+    metadata:
+      labels:
+        app: ahmadmushabbirmakerahmadpipelinesjavascriptdocker 
+    spec:
+      containers:
+        - name: ahmadmushabbirmakerahmadpipelinesjavascriptdocker 
+          image: ahmadacr786.azurecr.io/ahmadmushabbirmakerahmadpipelinesjavascriptdocker
+          ports:
+          - containerPort: 8080
